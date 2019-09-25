@@ -15,6 +15,11 @@ const handleUserInput = function (data){
   }
   if(data === 'a'){
     connection.write("Move: left");
+  }if(data === 'm'){
+    connection.write("Say: all i need is speed")
+  }
+  if(data === 'n'){
+    connection.write("Say: gah! foiled again")
   }
 }
 const setupInput = function(conn) {
