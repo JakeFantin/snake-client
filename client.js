@@ -7,6 +7,7 @@ const connect = function() {
   });
   conn.on('connect', () => {
     console.log('Connection Established');
+    conn.write('Name: MUK');
   })
   conn.on('data', (data) => {
     console.log(data);
